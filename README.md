@@ -1,6 +1,6 @@
 # JSON of literature search results
 #### Mr. George L. Malone
-#### 12<sup>th</sup> of March, 2021
+#### 15<sup>th</sup> of March, 2021
 
 This repository contains the contents of the code executor cells in a ChemInfo
 view for viewing and adding to a JSON of details of significantly dysregulated
@@ -21,6 +21,26 @@ with the originally requested project specifications.
 This work is also a partial spin-off of an attempt to aggregate certain curated
 chemical data.  Work on the aggregator is ongoing, and may be provided on
 GitHub in future.
+
+
+#### Current capabilities
+
+In its current state, the view in ChemInfo is able to display all data present
+in the PathBank and literature JSON files.  The PathBank data are displayed in
+a generated HTML table (see [`showPathbankData.js`](showPathbankData.js)), and
+the literature data are displayed in Slick Grid modules (which appear to be an
+implementation of [this library](https://slickgrid.net/)).  When clicking a row
+in the literature data, any information in the literature for the clicked
+chemical is displayed, as well as a tabular form for the user to add further
+data to the literature JSON if desired.  If new data are added, the user is
+prompted (i.e. a button is displayed) to download the new/augmented file.
+
+Below is a screenshot (at 2/3 zoom) of the view in its current state.  The
+visual structure of the view is relatively rudimentary at this stage, e.g.
+module boundaries are not hidden, buttons are not properly aligned.  This will
+likely be improved as the view is developed.
+
+![Current state of View](viewCurrent.png "Current state of ChemInfo View")
 
 
 #### Excluded data

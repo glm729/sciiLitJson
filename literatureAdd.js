@@ -11,7 +11,7 @@ API.createData("dataLiterature", data);
 API.createData("rowClicked", rowClicked);
 
 // Encode the URI component of the literature data and make the href
-let uc = encodeURIComponent(JSON.stringify(data));
+let uc = encodeURIComponent(JSON.stringify(data, null, 2));
 let hr = `data:application/json;charset=utf-8,${uc}`;
 
 // Initialise an anchor and a button
